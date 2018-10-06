@@ -4,7 +4,7 @@
 //
 //  Created by Letitia Wu on 2018/10/4.
 //  Copyright © 2018年 Letitia Wu. All rights reserved.
-//  This is a test of my github.
+//  This is a test of my github...
 
 import UIKit
 
