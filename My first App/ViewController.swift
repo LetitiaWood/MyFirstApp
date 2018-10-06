@@ -16,17 +16,17 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTapped(_ sender: Any) {
         
-        buttonCount = buttonCount + 1
+        buttonCount += 1
         print(buttonCount)
         
-        if buttonCount >= 10 {
+        if buttonCount >= 5 {
             view.backgroundColor = UIColor.red
-            myLabel.text = "You hit it more than 10 times"
+            myLabel.text = "You hit it more than 5 times"
         }
         
-        if buttonCount >= 15 {
+        if buttonCount >= 10 {
             view.backgroundColor = UIColor.blue
-            myLabel.text = "You hit it more than 15 times"
+            myLabel.text = "You hit it more than 10 times"
         }
         
     }
