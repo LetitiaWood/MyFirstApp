@@ -31,18 +31,44 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bX7-kd-1Zl"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uol-DW-Qci">
+                                <rect key="frame" x="157" y="360" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="vfa-3D-6v0"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pYX-8r-Klu">
+                                <rect key="frame" x="157" y="300" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="NrT-F3-TYT"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="uol-DW-Qci" firstAttribute="width" secondItem="pYX-8r-Klu" secondAttribute="width" id="5Dg-Rx-fK6"/>
+                            <constraint firstItem="uol-DW-Qci" firstAttribute="height" secondItem="pYX-8r-Klu" secondAttribute="height" id="HVG-Sk-cSm"/>
                             <constraint firstItem="0X8-vp-ZW6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P5A-A2-XbM"/>
+                            <constraint firstItem="pYX-8r-Klu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PoS-4o-C12"/>
                             <constraint firstItem="0X8-vp-ZW6" firstAttribute="top" secondItem="z1C-F8-cVF" secondAttribute="bottom" constant="10" id="Xde-lf-fWF"/>
+                            <constraint firstItem="z1C-F8-cVF" firstAttribute="top" secondItem="uol-DW-Qci" secondAttribute="bottom" constant="40" id="Xxa-jb-TVL"/>
+                            <constraint firstItem="uol-DW-Qci" firstAttribute="top" secondItem="pYX-8r-Klu" secondAttribute="bottom" constant="30" id="hXq-Xt-ioa"/>
                             <constraint firstItem="z1C-F8-cVF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x4w-LN-goh"/>
                             <constraint firstItem="z1C-F8-cVF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xpd-Ql-n0m"/>
+                            <constraint firstItem="uol-DW-Qci" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yvC-NX-two"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="bottomTextField" destination="uol-DW-Qci" id="ICC-iP-mCZ"/>
                         <outlet property="myLabel" destination="z1C-F8-cVF" id="9zU-2L-4ME"/>
+                        <outlet property="topTextField" destination="pYX-8r-Klu" id="pyp-YN-34Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
